@@ -13,10 +13,15 @@ private:
 
     bstnode<T>* findHelper(const T& obj) const;
     bstnode<T>* nextNode(bstnode<T>* node) const;
+    void deleteTree(bstnode<T>* node);
+
 
 public: 
     bst() : root(nullptr), m_size(0) {}
     bst(bstnode<T>* r) : root(r), m_size(0) {}
+    ~bst() {
+        deleteTree(root);
+    }
 
     T findMin() const;         // O(logn)
     T findMax() const;         // O(logn)
@@ -29,6 +34,18 @@ public:
     
 
 };
+
+// deleteTree 
+template <typename T>
+void bst<T>::deleteTree (bstnode<T>* node) {
+    if(node->left)
+        deleteTree(node->left);
+    if(node->right)
+        deleteTree(node->right);
+    
+    delete node;
+}
+
 
 // size
 template <typename T>
