@@ -2,7 +2,7 @@
 template class bst and bstnode implementation with some methods
 
 
-T findMin() const;    &nbsp         // O(logn) <br/>
+T findMin() const;             // O(logn) <br/>
 T findMax() const;             // O(logn) <br/>
 void printBFS() const;         // O(n)    <br/>
 size_t size() const;           // O(1)    <br/>
