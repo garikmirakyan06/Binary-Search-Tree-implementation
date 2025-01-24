@@ -19,50 +19,7 @@ This repository contains an implementation of a generic Binary Search Tree (BST)
   - `erase()`: **O(n)** (worst case for unbalanced trees)
   - `printBFS()`: **O(n)**
 
-## Methods
 
-### `T findMin() const`
-Returns the smallest value in the BST.
-
-- **Time Complexity**: O(log n) (average case)
-- **Returns**: Minimum element of type `T`.
-
-### `T findMax() const`
-Returns the largest value in the BST.
-
-- **Time Complexity**: O(log n) (average case)
-- **Returns**: Maximum element of type `T`.
-
-### `void printBFS() const`
-Prints the tree's nodes in level-order traversal.
-
-- **Time Complexity**: O(n)
-
-### `size_t size() const`
-Returns the number of elements in the tree.
-
-- **Time Complexity**: O(1)
-
-### `bool insert(const T& obj)`
-Inserts an element into the BST.
-
-- **Time Complexity**: O(log n) (average case)
-- **Parameters**: `obj` - the element to be inserted.
-- **Returns**: `true` if the insertion is successful, `false` if the element already exists.
-
-### `bool erase(const T& obj)`
-Removes an element from the BST.
-
-- **Time Complexity**: O(n) (worst case for unbalanced trees)
-- **Parameters**: `obj` - the element to be removed.
-- **Returns**: `true` if the removal is successful, `false` if the element does not exist.
-
-### `bool find(const T& obj) const`
-Searches for an element in the BST.
-
-- **Time Complexity**: O(log n) (average case)
-- **Parameters**: `obj` - the element to find.
-- **Returns**: `true` if the element is found, `false` otherwise.
 
 ## Usage
 
