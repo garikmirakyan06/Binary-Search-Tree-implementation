@@ -16,8 +16,8 @@ This repository contains an implementation of a generic Binary Search Tree (BST)
 - **Time Complexities**:
   - `findMin()` and `findMax()`: **O(log n)** (average case)
   - `insert()` and `find()`: **O(log n)** (average case)
-  - `erase()`: **O(n)** (worst case for unbalanced trees)
-  - `printBFS()`: **O(n)**
+  - `erase()`: **O(n)** (worst case for trees)
+  - `printBFS()`: **O(n)** (iterate each node once) 
 
 
 
