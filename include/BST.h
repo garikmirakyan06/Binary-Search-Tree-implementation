@@ -1,9 +1,10 @@
 #ifndef BST_H
 #define BST_H
-#include "BSTNode.h"
 #include <iostream>
 #include <queue>
+#include <exception>
 
+#include "BSTNode.h"
 
 template <typename T>
 class bst {
@@ -175,6 +176,7 @@ bool bst<T>::find(const T& obj) const {
 // printBFS
 template <typename T>
 void bst<T>::printBFS() const {
+    std::cout << "Levelvise traversal is: \n";
     if(!root) {
         return;
     }
@@ -183,6 +185,7 @@ void bst<T>::printBFS() const {
     while(!q.empty()) {
         int qsize = q.size();
         for(int i = 0; i < qsize; i++) {
+            
             auto node = q.front();
             std::cout << node->data << ' ';
             q.pop();

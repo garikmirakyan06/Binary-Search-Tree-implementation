@@ -9,4 +9,4 @@ add_subdirectory(external/googletest)
 add_executable(Test test.cpp)
 
 target_include_directories(Test PUBLIC ../include)
-target_include_directories(Test PRIVATE gtest gtest_main)
+target_link_libraries(Test PRIVATE gtest gtest_main)

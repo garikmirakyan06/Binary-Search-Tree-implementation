@@ -4,15 +4,18 @@
 
 int main() {
     bst<int>tree;
-    tree.insert(5);
-    tree.insert(52);
-    tree.insert(57);
-    tree.insert(53);
-    tree.insert(555);
-    // tree.insert(53);
-    
-    std::cout << tree.findMax();
-
+	
+	tree.insert(3);
+	tree.insert(3);
+	tree.insert(3);
+	tree.insert(5);
+	tree.insert(3);
+	tree.printBFS();
+	tree.erase(5);
+	tree.printBFS();
+	
+	
+	std::cout << tree.size();
 
 
     return 0;
