@@ -25,7 +25,7 @@ This repository contains an implementation of a generic Binary Search Tree (BST)
 
 cd scripts
 
-./docker_install.sh # if dont have docker installed
+./docker_install.sh # if you dont have docker installed
 
 ./docker_run.sh # to run docker
 
