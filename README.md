@@ -20,6 +20,17 @@ This repository contains an implementation of a generic Binary Search Tree (BST)
   - `printBFS()`: **O(n)** (iterate each node once) 
 
 
+## Getting started
+```bash
+
+cd scripts
+
+./docker_install.sh # if dont have docker installed
+
+./docker_run.sh # to run docker
+
+./build.sh # if you want to build localy
+```
 
 ## Usage
 
